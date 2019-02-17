@@ -1,4 +1,3 @@
-
 file = open("zadanie_4_triangle_big.txt", "r")
 data = []
 
@@ -7,7 +6,6 @@ for line in file:
         if i.isdigit():
             data.append(line)
             break
-
 
 for i in range(len(data)):
     data[i] = data[i].split()
