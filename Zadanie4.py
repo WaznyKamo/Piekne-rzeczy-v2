@@ -11,7 +11,7 @@ draw_count = 0
 
 # funkcja określająca czy grać dalej
 def continue_game():
-    game_choice = input("Czy grać dalej? \n T - Tak \n N - Nie")
+    game_choice = input("Czy grać dalej? \n T - Tak \n N - Nie \n")
     if game_choice == "T":
         return 1
     elif game_choice == "N":
@@ -66,13 +66,13 @@ while True:
         print("Podano błędną wartość")
 
     i = continue_game()
-    if i == 0:
+    if i == 1:
         pass
-    elif i == 1:
+    elif i == 2:
         break
     else:
         continue_game()
 
     print("Liczba wygranych: {0} \n"
           "Liczba przegranych: {1} \n"
-          "Liczba remisów: {2}".format(win_count, lose_count, draw_count))
+          "Liczba remisów: {2} \n".format(win_count, lose_count, draw_count))

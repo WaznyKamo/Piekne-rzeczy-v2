@@ -8,5 +8,5 @@ with zipfile.ZipFile("zadanie_1_words.zip", 'r') as zip:
         all_files += file
 
 for sign in string.ascii_lowercase:
-    print(("{} x {}").format(str(sign), all_files.count(str(sign))))
+    print("{} x {}".format(str(sign), all_files.count(str(sign))))
 
