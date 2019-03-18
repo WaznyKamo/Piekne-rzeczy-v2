@@ -1,3 +1,5 @@
+#Gra w papier kamień i nożyce
+
 import random
 # 1 - Kamień
 # 2 - Papier

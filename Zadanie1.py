@@ -1,3 +1,9 @@
+# W pliku rows.txt znajduje się tabela zawierająca liczby całkowite dla których
+# trzeba policzyć sumę kontrolną.
+# Twoim zadaniem jest dla każdego rzędu określić różnicę między największą
+# wartością a najmniejszą wartością - suma kontrolna jest sumą wszystkich tych
+# różnic.
+
 file = open("rows.txt", "r+")
 control_sum = 0
 difference = []
