@@ -14,7 +14,7 @@
 from urllib.parse import urljoin
 import csv
 import requests
-API_URL = 'https://swapi.co/api/people'
+API_URL = 'https://swapi.co/api/'
 people_url = urljoin(API_URL, 'people/')
 planets_url = urljoin(API_URL, 'planets/')
 
