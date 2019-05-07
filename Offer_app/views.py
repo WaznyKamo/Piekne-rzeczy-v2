@@ -23,3 +23,8 @@ def show_categories(category_id):
 def show_products():
     products = Product.query.all()
     return render_template('products_from_category.html', products=products)
+
+
+@app.route('/login')
+def login():
+    pass

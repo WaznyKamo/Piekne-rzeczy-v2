@@ -1,15 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+
+{% extends "layout.html" %}
+{% block content %}
+
 <h2>Products:</h2>
-<ul>
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
     {%for product in products%}
-    <li>{{product.name}}</li>
+    <tr>
+        <th>{{product.name}}</th>
+        <th>{{product.price|round(2)}}</th>
+        <th>Add to cart</th>
+    </tr>
     {%endfor%}
-</ul>
-</body>
-</html>
+</table>
+
+{% endblock %}
